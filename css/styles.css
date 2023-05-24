@@ -242,6 +242,20 @@ p{
 }
 
 
+/* PAGE NOSOTROS */
+
+.nuestros-comienzos{
+
+    background-color: rgb(250, 244, 235);
+
+
+}
+
+
+.equipo{
+
+    background-color: #d4cfb8;
+}
 
 
 
@@ -249,7 +263,7 @@ p{
 
 /* PAGE PRODUCTOS */
 
-.container{
+/* .container{
 	display: flex;
 	justify-content: center;
 	height: 100vh;
@@ -320,4 +334,4 @@ p{
 	padding: .8rem 1.5rem;
 	letter-spacing: .1rem;
 	align-self: flex-end;
-}
+} */
