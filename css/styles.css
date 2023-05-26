@@ -295,11 +295,8 @@ h1 a{color:#131313; font-weight:bold;} */
 .profile-card-3 .background-block .background {
   width:100%;
   vertical-align: top;
-  opacity: 0.9;
-  -webkit-filter: blur(0.5px);
-  filter: blur(0.5px);
-   -webkit-transform: scale(1.8);
-  transform: scale(2.8);
+  opacity: 0.95;
+
 }
 .profile-card-3 .card-content {
   width: 100%;
@@ -317,7 +314,7 @@ h1 a{color:#131313; font-weight:bold;} */
     background: #efefef;
     width: 120%;
     height: 100%;
-    left: 11px;
+    left: 5px;
     bottom: 51px;
     position: absolute;
     z-index: -1;
