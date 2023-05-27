@@ -248,10 +248,18 @@ p{
 
 }
 
-
 .equipo{
 
     background-color: #d4cfb8;
+}
+
+.imagen{
+
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
 }
 
 
