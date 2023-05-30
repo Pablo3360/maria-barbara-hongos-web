@@ -45,6 +45,8 @@
         </button>
     </div>
 
+
+    <!-- Seagregó al navbar la clase sticky-top e icono hamburguesa para el colapso -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -84,13 +86,13 @@
                     <div>
                         <ul class="navbar-nav flex-row flex-wrap text-light">
                             <li class="nav-item col-2 col-md-auto px-3">
-                                <i class="bi bi-instagram"></i>
+                                <a href="https://www.instagram.com/mariabarbarahongos/" target="iframe"><i class="bi bi-instagram icolor" ></i></a>
                             </li>
                             <li class="nav-item col-2 col-md-auto px-3">
-                                <i class="bi bi-facebook"></i>
+                                <a href="https://www.facebook.com/mariabarbarahongos/" target="iframe"><i class="bi bi-facebook icolor"></i></a>
                             </li>
                             <li class="nav-item col-2 col-md-auto px-3">
-                                <i class="bi bi-whatsapp"></i>
+                                <a href="https://www.facebook.com/mariabarbarahongos/" target="iframe"><i class="bi bi-whatsapp icolor"></i></a>
                             </li>
         
                         </ul>
@@ -105,76 +107,86 @@
     </nav>
 
 
-    <div class="container-fluit text-center nuestros-comienzos">
+    <!-- Utilicé grid sistem de BS. Utilicé clases propiar para alinear la imagen (usando flex).
+    Apliqué las @queris para disminuir areas sin contenido. Cambié orden de columnas usando la clases
+    order-x -->
+    <div class="container-fluid text-center nuestros-comienzos">
+
+            <h3 class="titulo-nosotros">Nuestros comienzos</h3>
             
-            <div class="row pt-5 mb-4">
-              <div class="col">
-                <div class="my-3 py-3 px-3 imagen">
+            <div class="row py-4 justify-content-center">
+              <div class="col-sm-4">
+                <div class="px-3 txt-imagen">
                     <h2 class="display-7">De enero a septiembre 2019</h2>
                     <p class="lead">Cursos de Agroecología y Huerta Urbana dictado por la Sec. de Agricultura Familiar de la Provincia de Misiones.</p>
                 </div>
               </div>
-              <div class="col" >
+              <div class="col-sm-4" >
                         <div class="imagen">
-                            <img src="../img/inicio1.jpg" class="img-fluid rounded" width="200px">
+                            <img src="../img/inicio11.jpg" class="img-fluid rounded" width="300px">
                         </div>
               </div>
             </div>
 
-            <div class="row my-4">
-                <div class="col">
-                    <div class="imagen">
-                        <img src="../img/inicio2.jpg" class="img-fluid rounded" width="200px" height="200px">
-                    </div>
-                </div>
-                <div class="col">
-                  <div class="my-3 py-3 px-3 imagen">
+            <div class="row py-4 justify-content-center">
+                <div class="col-sm-4 order-md-2">
+                    <div class="px-3 txt-imagen">
                       <h2 class="display-7">Septiembre y noviembre 2019</h2>
                       <p class="lead">Taller Promoción de Producción y Procesamiento de Hongos Comestibles dictador por IMiBio.</p>
+                    </div>
                 </div>
+                <div class="col-sm-4 order-md-1">
+                    <div class="imagen">
+                        <img src="../img/inicio2.jpg" class="img-fluid rounded" width="300px">
+                    </div>
                 </div>
+                
                 
             </div>
 
-            <div class="row pb-5 mt-4">
-                <div class="col">
-                  <div class="my-3 py-3 px-3 imagen">
+            <div class="row py-4 justify-content-center">
+                <div class="col-sm-4">
+                  <div class="px-3 txt-imagen">
                       <h2 class="display-7">Marzo 2020</h2>
                       <p class="lead">Primera cosecha y Lanzamiento.</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-4">
                     <div class="imagen">
-                        <img src="../img/inicio3.jpg" class="img-fluid rounded" width="200px" height="200px">
+                        <img src="../img/inicio3.jpg" class="img-fluid rounded" width="300px">
                     </div>
                 </div>
             </div>
 
-            <div class="row my-4">
-                <div class="col">
+            <div class="row py-4 justify-content-center">
+                <div class="col-sm-4 order-md-2">
+                    <div class="px-3 txt-imagen ">
+                        <h2 class="display-7">Abril 2020</h2>
+                        <p class="lead">Presencia en el Mercado Concentrador Zonal de Obera y Feria Franca N° 1.</p>
+                      </div>
+                </div>
+                  
+                <div class="col-sm-4 order-md-1">
                     <div class="imagen">
-                        <img src="../img/inicio4.jpg" class="img-fluid rounded" width="200px" height="200px">
+                        <img src="../img/inicio4.jpg" class="img-fluid rounded" width="300px">
                     </div>
                 </div>
-                <div class="col">
-                  <div class="my-3 py-3 px-3 imagen">
-                      <h2 class="display-7">Abril 2020</h2>
-                      <p class="lead">Presencia en el Mercado Concentrador Zonal de Obera y Feria Franca N° 1.</p>
-                    </div>
-                </div>
+                
                 
             </div>
     </div>
 
 
     
-
+    <!-- Modifiqué codigo descargado de internet para generar cards.
+        En cada columna deje la etiqueta style para indicarle al tutor de cierta manera que examiné el codigo.
+        En la etiqueta style solucioné un problema de aliniacion horizontal muy notoria en la vista mobile-->
     <div class="container-fluid text-center equipo">
-        <h3 class=""">Equipo de trabajo</h3>
-        <div class="row justify-content-md-center">
-            <div class="col col-lg-3 my-4">
-    
-                <!--Profile Card 3-->
+        <h3 class="titulo-nosotros">Equipo de trabajo</h3>
+        <div class="row pb-3 justify-content-center">
+
+            <!--Profile Card-->
+            <div class="col-sm col-lg-3 my-1" style="display:flex; justify-content: space-around;">
                 <div class="card profile-card-3">
                     <div class="background-block">
                         <img src="../img/fondo-david.jpg" alt="profile-sample1" class="background"/>
@@ -183,24 +195,24 @@
                         <img src="../img/david-perfil.jpg" alt="profile-image" class="profile"/>
                     </div>
                     <div class="card-content">
-                        <h2>David Gomez<small>Producción y Laboratorio</small></h3>
+                        <h2>David Gomez<small>Producción y Laboratorio</small></h2>
                         <div class="icon-block">
-                            <a href="#">
+                            <a href="https://www.facebook.com/davidgomezarg/">
                                 <i class="bi bi-facebook"></i>
                             </a>
                             <a href="#">
                                 <i class="bi bi-twitter"></i>
                             </a>
-                            <a href="#">
+                            <a href="https://www.instagram.com/davidgomezarg/">
                                 <i class="bi bi-instagram"></i>
                             </a>
                         </div>
                     </div>
-                </div>
-              
+                </div>  
             </div>
-    
-            <div class="col col-lg-3 my-4">
+            
+            <!--Profile Card-->
+            <div class="col-sm col-lg-3 my-1" style="display:flex; justify-content: space-around;">
                 <div class="card profile-card-3">
                     <div class="background-block">
                         <img src="../img/fondo-perfil3.jpg" alt="profile-sample1" class="background"/>
@@ -209,13 +221,15 @@
                         <img src="../img/mirta-perfil.jpg" alt="profile-image" class="profile"/>
                     </div>
                     <div class="card-content">
-                    <h2>Mirta Arguello<small>Producción y Comercialización</small></h3>
+                    <h2>Mirta Arguello<small>Producción y Comercialización</small></h2>
                     <div class="icon-block"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"> <i class="bi bi-twitter"></i></a><a href="#"> <i class="bi bi-instagram"></i></a></div>
                     </div>
                 </div>
             </div>
     
-            <div class="col col-lg-3 my-4">
+
+            <!--Profile Card-->
+            <div class="col-sm col-lg-3 my-1" style="display:flex; justify-content: space-around;">
                 <div class="card profile-card-3">
                     <div class="background-block">
                         <img src="../img/fondo-perfil4.jpg" alt="profile-sample1" class="background"/>
@@ -224,7 +238,7 @@
                         <img src="../img/damian-perfil.jpg" alt="profile-image" class="profile"/>
                     </div>
                     <div class="card-content">
-                    <h2>Damian Gomez<small>Gestión y Logística</small></h3>
+                    <h2>Damian Gomez<small>Gestión y Logística</small></h2>
                     <div class="icon-block"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"> <i class="bi bi-twitter"></i></a><a href="#"> <i class="bi bi-instagram"></i></a></div>
                     </div>
                 </div>
@@ -254,17 +268,17 @@
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item">
                                 <a href="https://www.instagram.com/mariabarbarahongos/">
-                                    <i class="bi bi-instagram"></i>
+                                    <i class="bi bi-instagram  icolor"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/mariabarbarahongos/">
+                                    <i class="bi bi-facebook icolor"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://www.instagram.com/mariabarbarahongos/">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.instagram.com/mariabarbarahongos/">
-                                    <i class="bi bi-whatsapp"></i>
+                                    <i class="bi bi-whatsapp icolor"></i>
                                 </a>
                             </li>
 
