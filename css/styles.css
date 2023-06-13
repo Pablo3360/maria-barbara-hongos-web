@@ -55,9 +55,6 @@ p{
     "amain amain amain" 
     "amision amision amision"
     "afoot afoot afoot" ;
-
-
-
 }
 
 
@@ -197,12 +194,6 @@ p{
 .foot{
     grid-area: afoot;
 }
-
-.foot__direccion{
-
-
-}
-
 
 @media(max-width:600px) {
     .main{
