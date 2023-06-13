@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Etiquetas */
+
+a {
+
+    text-decoration: none!important;
+    
+} 
+
+p{
+
+    margin-bottom: 0!important;
+}
+
+.montserrat { 
+    font-family: "Monstserrat-Black", cursive;
+    font-size: 30px;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 1000;
+    
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "acarrusel acarrusel acarrusel"
+    "anav anav anav"
+    "amain amain amain" 
+    "amision amision amision"
+    "afoot afoot afoot" ;
+}
+
+
+.carousel{
+    grid-area: acarrusel;
+}
+
+.carousel-item{
+    height: 32rem;
+    background: #777;
+    position:relative;
+}
+.overlay-img{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+
+
+}
+.navbar{
+
+    grid-area: anav;
+}
+
+.icolor{
+
+    color: white;
+}
+
+// Se utiliza SASS en las etiquetas main (clase .main) y seccion (clase .mision)
+
+.main{
+    grid-area: amain;
+    display: flex;
+
+    background-color: rgb(250, 244, 235);
+
+    justify-content: space-around;
+    align-items: center;
+
+    padding-left: 10%;
+    padding-right : 10%;
+
+    &__texto{
+        width: 50%;
+        margin: 5%;
+        text-align: left;
+
+        h1{
+            margin-bottom: 20px;
+        }
+    }
+
+    &__suscripcion{
+        max-width: 450px;
+        width: 50%;
+        margin: 5%;
+        text-align: center;
+
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 60px -10px rgba(0,0,0,0.75);
+
+        form{
+            display: flex;
+            flex-direction: column;
+
+            input, textarea{
+                background: rgb(250, 244, 235);
+                padding: 10px;
+                border-radius: 5px;
+                margin: 10px 10px 10px 0px;
+            }
+        }
+
+        .susc-boton{
+            //width: 50%;
+            background-color:gray;
+            border: none;
+            padding: 12px;
+
+            border-radius: 5px;
+            margin: 16px 0;
+            color: white;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+    }
+    
+}
+
+.mision{
+    grid-area: amision;
+    display: flex;
+    
+    background-color: #d4cfb8;
+
+    justify-content: space-around;
+    align-items: center;
+
+    padding-left: 10%;
+    padding-right : 10%;
+
+    &__texto{
+        width: 50%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    &__video{
+        width: 50%;
+        margin: 5%;
+        text-align: center;
+
+        iframe{
+            width:50%;
+        }
+    }
+
+}
+
+
+.foot{
+    grid-area: afoot;
+}
+
+@media(max-width:600px) {
+    .main{
+        flex-wrap: wrap;
+    }
+    .mision{
+        flex-wrap: wrap;
+    }
+
+    .foot{
+        flex-wrap: wrap;
+    }
+    .main__suscripcion{
+        /* background-color: blue; */
+        width: 100%;
+    }
+
+    .iframe{
+        width:100%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .foot__direccion{
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media(max-width:1024px){
+
+    .main{
+        padding-left: 0;
+        padding-right : 0;
+    }
+
+    .mision {
+
+        padding-left: 0;
+        padding-right : 0;
+    }
+}

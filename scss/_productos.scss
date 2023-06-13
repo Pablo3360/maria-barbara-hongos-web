@@ -1,0 +1,30 @@
+.head {
+    text-align: center;
+    background-color: rgb(250, 244, 235);
+
+    h3{
+        margin-bottom: 0px;
+    }
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    
+    max-width: 100%;
+    // margin-inline: auto;
+
+    background-color: rgb(250, 244, 235);
+
+
+    .card{
+        
+        max-width: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    }
+    
+}
+

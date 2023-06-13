@@ -89,7 +89,7 @@ p {
   display: flex;
   flex-direction: column;
 }
-.main__suscripcion form input {
+.main__suscripcion form input, .main__suscripcion form textarea {
   background: rgb(250, 244, 235);
   padding: 10px;
   border-radius: 5px;
@@ -194,7 +194,7 @@ p {
   /* align-items: center; */
 }
 
-.titulo-nosotros {
+.titulo-pages {
   padding: 15px;
 }
 
@@ -299,6 +299,27 @@ p {
   float: left;
   width: 100%;
   margin-top: 15px;
+}
+
+.head {
+  text-align: center;
+  background-color: rgb(250, 244, 235);
+}
+.head h3 {
+  margin-bottom: 0px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 100%;
+  background-color: rgb(250, 244, 235);
+}
+.productos .card {
+  max-width: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
