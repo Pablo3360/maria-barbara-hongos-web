@@ -17,7 +17,7 @@ p{
 }
 
 .montserrat { 
-    font-family: "Monstserrat-Black", cursive;
+    font-family: "Monstserrat-Black";
     font-size: 30px;
 }
 
@@ -76,7 +76,7 @@ p{
     grid-area: amain;
     display: flex;
 
-    background-color: rgb(250, 244, 235);
+    background-color: $color-principal;
 
     justify-content: space-around;
     align-items: center;
