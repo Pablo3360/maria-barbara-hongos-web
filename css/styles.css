@@ -107,6 +107,25 @@ p {
   font-weight: 400;
 }
 
+.susc-boton {
+  animation: pulse 1s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(128, 128, 128, 0.7);
+  }
+  40% {
+    box-shadow: 0 0 0 10px rgba(128, 128, 128, 0);
+  }
+  80% {
+    box-shadow: 0 0 0 10px rgba(128, 128, 128, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(128, 128, 128, 0);
+  }
+}
 .mision {
   grid-area: amision;
   display: flex;
@@ -204,11 +223,6 @@ p {
   }
 }
 /* Clases para card */
-*:hover {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
 /*Profile Card*/
 .profile-card-3 {
   font-family: "Open Sans", Arial, sans-serif;
