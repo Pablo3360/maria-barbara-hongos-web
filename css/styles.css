@@ -129,6 +129,7 @@ p {
 .mision {
   grid-area: amision;
   display: flex;
+  height: 400px;
   background-color: #d4cfb8;
   justify-content: space-around;
   align-items: center;
@@ -142,13 +143,9 @@ p {
 }
 .mision__video {
   width: 50%;
-  margin: 5%;
+  margin: 1%;
   text-align: center;
 }
-.mision__video iframe {
-  width: 50%;
-}
-
 .foot {
   grid-area: afoot;
 }
@@ -159,6 +156,7 @@ p {
   }
   .mision {
     flex-wrap: wrap;
+    height: auto;
   }
   .foot {
     flex-wrap: wrap;

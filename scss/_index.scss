@@ -162,6 +162,8 @@ p{
 .mision{
     grid-area: amision;
     display: flex;
+
+    height: 400px;
     
     background-color: #d4cfb8;
 
@@ -179,11 +181,11 @@ p{
 
     &__video{
         width: 50%;
-        margin: 5%;
+        margin: 1%;
         text-align: center;
 
         iframe{
-            width:50%;
+
         }
     }
 
@@ -200,6 +202,7 @@ p{
     }
     .mision{
         flex-wrap: wrap;
+        height: auto;
     }
 
     .foot{
