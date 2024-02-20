@@ -108,7 +108,7 @@ p {
 }
 
 .susc-boton {
-  animation: pulse 1s linear infinite;
+  /* animation: pulse 1s linear infinite; */
   cursor: pointer;
 }
 
